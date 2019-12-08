@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/rwd.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
 <body>
@@ -19,10 +20,12 @@
         </div>
     </header>
     <div class="nav">
+        <input type="checkbox" id="checkbox-toggle">
+        <label for="checkbox-toggle">Menu</label>
         <ul>
-            <a href="#about"><li class="list-item">O mnie</li></a>
-            <a href="#portfolio"><li class="list-item">Portfolio</li></a>
-            <a href="#contact"><li class="list-item">Kontakt</li></a>
+            <li class="list-item"><a href="#about">O mnie</a></li>
+            <li class="list-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="list-item"><a href="#contact">Kontakt</a></li>
         </ul>
     </div>
     <section class="about" id="about">
@@ -39,18 +42,18 @@
         <h2>Portfolio</h2>
         <hr>
         <div class="gallery">
-            <img src="../projekt/img/portfolio/photo-1.jpg" alt="" class="photo">
-            <img src="../projekt/img/portfolio/photo-2.jpg" alt="" class="photo">
-            <img src="../projekt/img/portfolio/photo-3.jpg" alt="" class="photo">
-            <img src="../projekt/img/portfolio/photo-4.jpg" alt="" class="photo">
-            <img src="../projekt/img/portfolio/photo-5.jpg" alt="" class="photo">
-            <img src="../projekt/img/portfolio/photo-6.jpg" alt="" class="photo">
-            <img src="../projekt/img/portfolio/photo-7.jpg" alt="" class="photo">
-            <img src="../projekt/img/portfolio/photo-8.jpg" alt="" class="photo">
-            <img src="../projekt/img/portfolio/photo-9.jpg" alt="" class="photo">
-            <img src="../projekt/img/portfolio/photo-10.jpg" alt="" class="photo">
-            <img src="../projekt/img/portfolio/photo-11.jpg" alt="" class="photo">
-            <img src="../projekt/img/portfolio/photo-12.jpg" alt="" class="photo">
+            <div class="photo"><h3 class="photo-title">Projekt</h3><img src="../projekt/img/portfolio/photo-1.jpg" alt=""></div>
+            <div class="photo"><h3 class="photo-title">Projekt</h3><img src="../projekt/img/portfolio/photo-2.jpg" alt=""></div>
+            <div class="photo"><h3 class="photo-title">Projekt</h3><img src="../projekt/img/portfolio/photo-3.jpg" alt=""></div>
+            <div class="photo"><h3 class="photo-title">Projekt</h3><img src="../projekt/img/portfolio/photo-4.jpg" alt=""></div>
+            <div class="photo"><h3 class="photo-title">Projekt</h3><img src="../projekt/img/portfolio/photo-5.jpg" alt=""></div>
+            <div class="photo"><h3 class="photo-title">Projekt</h3><img src="../projekt/img/portfolio/photo-6.jpg" alt=""></div>
+            <div class="photo"><h3 class="photo-title">Projekt</h3><img src="../projekt/img/portfolio/photo-7.jpg" alt=""></div>
+            <div class="photo"><h3 class="photo-title">Projekt</h3><img src="../projekt/img/portfolio/photo-8.jpg" alt=""></div>
+            <div class="photo"><h3 class="photo-title">Projekt</h3><img src="../projekt/img/portfolio/photo-9.jpg" alt=""></div>
+            <div class="photo"><h3 class="photo-title">Projekt</h3><img src="../projekt/img/portfolio/photo-10.jpg" alt=""></div>
+            <div class="photo"><h3 class="photo-title">Projekt</h3><img src="../projekt/img/portfolio/photo-11.jpg" alt=""></div>
+            <div class="photo"><h3 class="photo-title">Projekt</h3><img src="../projekt/img/portfolio/photo-12.jpg" alt=""></div>
         </div>
     </section>
     <section class="contact" id="contact">

@@ -5,7 +5,6 @@
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-
 }
 .header
 {
@@ -18,7 +17,6 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
 h1
 {
@@ -29,6 +27,7 @@ h1
 }
 hr
 {
+    margin: 0 auto;
     width: 70px;
     border-color: #007bff;
     border-bottom: 0;
@@ -38,6 +37,7 @@ hr
   }
 .button
 {
+    margin: 8px 0;
     padding: 10px;
     background-color: transparent;
     border: 1px solid #007bff;
@@ -58,8 +58,18 @@ hr
     background-color: #007bff;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
-ul
+.nav input[type="checkbox"]
+{
+    display: none;
+}
+
+.nav label
+{
+    display: none;
+}
+.nav ul
 {
     margin: 0;
     list-style-type: none;
@@ -72,18 +82,20 @@ ul
 {
     text-transform: uppercase;
     transition: all linear 0.2s;
-    padding: 15px;
+    padding: 10px;
+    margin: 0 5px;
 }
 a 
 {
     text-decoration: none;
     color: white;
+    padding: 10px;
 }
-.list-item:hover
+.nav ul .list-item:hover
 {
     background-color: white;
 }
-a:hover 
+.nav ul .list-item:hover a
 {
     color: #007bff;
 }
@@ -94,13 +106,13 @@ h2
 section
 {
     text-align: center;
-    padding: 80px;
+    padding: 50px;
 }
 .img
 {
-    display: block;
     border-radius: 100%;
     margin: 50px auto;
+    width: 60vh;
 }
 .paragraph
 {
@@ -109,9 +121,11 @@ section
     width: 60%;
     color: #777;
 }
+/* galeria */
 .portfolio
 {
     background-color:  #f2f1ed;
+    padding: 50px 0;
 }
 
 .gallery
@@ -120,45 +134,76 @@ section
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
-    padding: 30px 0;
+    width: 80%;
+    padding: 40px 0;
+    margin: 0 auto;
 }
 .photo
 {
+    flex-basis: 25%;
     height: 200px;
+    position: relative;
 }
+.photo-title
+{
+    margin: 0 auto;
+    position: absolute;
+    flex-basis: 25%;
+    background-color: rgba(0, 123, 255, 0.7);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 200px;
+    font-size: 32px;
+    color: white;
+    font-weight: 400;
+    transition: all linear 0.12s;
+}
+.photo-title:hover
+{
+    opacity: 1;
+}
+img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* formularz */
 .contact
 {
     text-align: center;
-    width: 70%;
+    width: 50%;
     margin: auto;
-    padding: 0;
+    padding: 50px 0;
 }
-
 form
 {
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+    justify-content: space-between;
+    padding: 60px 0;
 }
 
 [type="text"], [type="email"]
 {
     padding: 10px;
-    flex-basis: 45%;
-    align-self: auto;
+    display: inline-block;
+    flex-basis: 49%;
+    margin: 8px 0;
 }
 textarea
 {
+    display: inline-block;
     flex-basis: 100%;
-    padding: 10px;
-    margin: 8px;
     font-family: 'Open Sans', sans-serif;
+    padding: 10px;
 }
 [type="submit"]
 {
+    margin: 10px auto;
     padding: 10px;
     background-color: transparent;
     border: 1px solid #007bff;
@@ -171,11 +216,10 @@ textarea
 {
     background-color: #007bff;
 }
-
-
+/* socials */
 .socials
 {
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 15px;
 }
 .fab
